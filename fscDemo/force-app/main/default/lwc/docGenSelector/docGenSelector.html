@@ -1,0 +1,19 @@
+<template>
+    <div style="position:relative;" class="wrapper">
+        Select a merge action:
+        <select class="doc-gen-selector">
+            <option value="eyJhY3Rpb25JZCI6ImEwMDM2MDAwMDBQYmgwTUFBUiIsImxpbmtGaWVsZElkIjoiSWQifQ==">Stay in touch
+            </option>
+            <option value="eyJhY3Rpb25JZCI6ImEwMDFSMDAwMDBkbE1KU1FBMiIsImxpbmtGaWVsZElkIjoiSWQifQ==">With profile pic
+            </option>
+        </select>
+        <button title="Run the selected action" type="button" class="slds-button slds-button_brand"
+            style="margin-left: 1rem" onclick={runButtonClicked}>Run</button>
+        <div class="popup">
+            <button class="close-popup" onclick={closePopup}>&#215;</button>
+            <div class="popup-body">
+                <iframe class="iframe"></iframe>
+            </div>
+        </div>
+    </div>
+</template>
